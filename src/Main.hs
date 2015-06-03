@@ -1,12 +1,15 @@
-{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE DataKinds     #-}
 {-# LANGUAGE TypeOperators #-}
 
 module Main where
 
-import Servant
-import Servant.Utils.StaticFiles
+import           Servant
+-- import Servant.Utils.StaticFiles
+--
+import           App.User
+import           App.Events
 
-import Network.Wai.Handler.Warp
+import           Network.Wai.Handler.Warp
 
 type API =  Raw
 
